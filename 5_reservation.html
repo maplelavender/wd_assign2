@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="wb_assign2">
+    <meta name="keywords" content="Assignment02">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mayland">
+    <title>Monkey Foodies</title>
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="CSS/DesktopCSS.css">
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1023px)" href="CSS/TabletCSS.css">
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="CSS/MobileCSS.css">
+	<script src="JS/ReservValidation.js"></script>
+    <script src="js/Dynamic.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="Images/Monkeys/Monkey03.png" alt="Monkey" height="48" width="48">
+        <h1>Monkey Foodies</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+    <ul>
+        <li class="nav"><a href="1_index.html">Home Page</a></li>
+        <li class="nav"><a href="2_restaurants.html">Restaurant Page</a></li>
+        <li class="nav"><a href="3_reccomend.html">Reccomendation Page</a></li>
+        <li class="nav"><a href="4_register.html">Registration Page</a></li>
+        <li class="nav"><a href="5_reservation.html" class="active">Reservation Page</a></li>
+    </ul> 
+    </div>
+</nav>
+<main>
+<form id="reservForm" method="post"
+action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+    <h2>Reservation Page</h2>
+    <hr>
+    <fieldset class="form">
+        <legend>Reservation Information</legend>
+			<div class="textInput">
+				<label for="name">Full name</label>
+				<input id="name" type="text" name="name" />
+			</div>
+            <div class="textInput">
+				<label for="email">Email Address</label>
+				<input id="email" type="text" name="email" />
+			</div>
+            <div class="textInput">
+				<label for="phone">Phone Number</label>
+				<input id="phone" type="text" name="phone" />
+			</div>
+			<div class="selectInput">
+                <label for="selection">Restaurant Selection</label>
+                <select name="selection" id="selection">
+                    <option value="gopals">Gopals</option>
+                    <option value="kajiken">Kajiken</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="patsys">Patsys</option>
+                    <option value="secretK">Secret Kitchen</option>
+                    <option value="vapiano">Vapiano</option>
+                </select>
+                <input id="restSelect" type="button" value="Select" class="buttonBTN" onclick="setFee()">
+            </div>
+            <div class="dateTimeInput">
+                <label for="date">Select Date and Time</label>
+                <div class="dateTimeinputs">
+                <input type="date" id="date" name="date" min="2026-06-01" required><br><br>
+                <input type="time" id="time" name="time" min="08:00" max="22:00" required>
+                </div>
+            </div>
+            <div class="selectInput">
+                <label for="people">Number of People</label>
+                <select name="people" id="people">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="seven">7</option>
+                    <option value="eight">8</option>
+                </select>
+            </div>
+            <div class="textInput">
+				<label for="request">Special Requests</label>
+				<input id="request" type="text" name="request" />
+			</div>
+		</fieldset>
+        <fieldset class="form">
+			<legend>Payment Information</legend>
+            <div class="reservFee">
+				<span class="reservLabel">Reservation Fee</span>
+                <div id="fee">$ 00.00</div>
+            </div>
+            <div class="radioInput">
+                <span class="radioLabel">Payment Method</span>
+                <input id="payV" type="radio" name="payment" value="voucher"/>
+                <label for="payV">Voucher</label>
+                <input id="payC" type="radio" name="payment" value="card"/>
+                <label for="payC">Card</label>
+                <input id="paySelect" type="button" value="Select" class="buttonBTN" onclick="payWith()">
+            </div>
+            <div class="textInput">
+				<label for="payType"></label>
+				<input id="payTypeDetail" type="text" name="payType" style="visibility:hidden"/>
+			</div>
+            <div class="textInput">
+				<label for="billEmail">Billing Email</label>
+				<input id="billEmailInput" type="text" name="billEmail" />
+			</div>
+            <div class="checkBoxInput">
+                <span class="checkBoxLabel"></span>
+                <div class="checkBoxes">
+                <input id="billEinput" type="checkbox" name="billE" onclick="sameAs()"/>
+                <label for="billE">Same as Email Address</label>
+                </div>
+            </div>
+        </fieldset>
+    <div class="buttonInput">
+        <input type="submit" value="Confirm"/>
+    </div>		
+</form>
+</main>
+</body>
+
+<footer>
+    <div class="footer">
+        <img src="Images/Monkeys/Monkey04.png" alt="Monkey" width="50" height="50" class="footerImage">
+        <p>Made By Mayland</p>
+        <img src="Images/Monkeys/Monkey05.png" alt="Monkey" width="50" height="50" class="footerImage">
+    </div>
+</footer>

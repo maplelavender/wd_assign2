@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="wb_assign1">
+    <meta name="keywords" content="Assignment01">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mayland">
+    <title>Monkey Foodies</title>
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="CSS/DesktopCSS.css">
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1023px)" href="CSS/TabletCSS.css">
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="CSS/MobileCSS.css">
+	<Script src="JS/ReccValidation.js"></script>
+    <script src="JS/RestSelect.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="Images/Monkeys/Monkey03.png" alt="Monkey" height="48" width="48">
+        <h1>Monkey Foodies</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+    <ul>
+        <li class="nav"><a href="1_index.html">Home Page</a></li>
+        <li class="nav"><a href="2_restaurants.html">Restaurant Page</a></li>
+        <li class="nav"><a href="3_reccomend.html" class="active">Reccomendation Page</a></li>
+        <li class="nav"><a href="4_register.html">Registration Page</a></li>
+        <li class="nav"><a href="5_reservation.html">Reservation Page</a></li>
+    </ul> 
+    </div>
+</nav>
+<main>
+<form id="regForm" method="post" class="searchForm">
+    <h2>Reccomendation Page</h2>
+    <hr>
+    <fieldset class="form2">
+        <legend>Search Filters</legend>
+        <div class="selectSearchInput">
+            <div class="selectInput2">
+                <label for="dietary">Budget Range</label>
+                <select name="dietary" id="dietary">
+                    <option value="none">None</option>
+                    <option value="halal">$</option>
+                    <option value="vegetarian">$$</option>
+                    <option value="vegan">$$$</option>
+                    <option value="vegan">$$$$</option>
+                </select>
+            </div>
+            <div class="selectInput2">
+                <label for="dietary">Dining Purpose</label>
+                <select name="dietary" id="dietary">
+                    <option value="none">None</option>
+                    <option value="halal">Date</option>
+                    <option value="vegetarian">Family</option>
+                    <option value="vegan">Business</option>
+                </select>
+            </div>
+            <div class="selectInput2">
+                <label for="dietary">Dietary Preferences</label>
+                <select name="dietary" id="dietary">
+                    <option value="none">None</option>
+                    <option value="halal">Halal</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <div class="buttonSearch">
+        <input type="button" value="Search" class="searchButton"/>
+    </div>
+    <div class="buttonSearch">
+        <input type="reset" value="Clear Filters" class="searchButton"/>
+    </div>
+</form>
+<article>
+<!--Restaurant 1-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/GopalsImage.jpg" alt="Gopals" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Gopal's Vegetarian Restaurant</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$<span style="color:darkgrey">$$$</span></span></h2>
+                </div>
+                <p>
+                Cuisine: Vegetarian and Vegan
+                <br>
+                Reservation: Not Required
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="gop" value="gopals" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 2-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/KajikenImage.jpg" alt="Kajiken" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Kajiken</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$$<span style="color:darkgrey">$$</span></span></h2>
+                </div>
+                <p>
+                Cuisine: Japanese
+                <br>
+                Reservation: Not Required
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="kaj" value="kajiken" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 3-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/PalermoImage.png" alt="Palermo" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Palermo</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$$$$<span style="color:darkgrey"></span></span></h2>
+                </div>
+                <p>
+                Cuisine: Argentinian and Italian
+                <br>
+                Reservation: $50 Per Person
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="pal" value="palermo" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 4-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/PatsysImage.png" alt="Patsys" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Patsy's</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$$$<span style="color:darkgrey">$</span></span></h2>
+                </div>
+                <p>
+                Cuisine: Vegetarian
+                <br>
+                Reservation: $25 Per Person
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="pat" value="patsys" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 5-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/SecretKitchenImage.jpg" alt="SecretKitchen" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Secret Kitchen</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$$<span style="color:darkgrey">$$</span></span></h2>
+                </div>
+                <p>
+                Cuisine: Chinese
+                <br>
+                Reservation: No Fee
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="sec" value="secretK" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 6-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFront">
+                    <img src="Images/Restaurants/VapianoImage.jpeg" alt="Vapiano" class="cardImage">
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2>Vapiano</h2>
+                    <h2 style="font-size: 18px;"><span style="text-align: right;">$$<span style="color:darkgrey">$$</span></span></h2>
+                </div>
+                <p>
+                Cuisine: Italian
+                <br>
+                Reservation: $5 Per Person
+                </p>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="vap" value="vapiano" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+</body>
+
+<footer>
+    <div class="footer">
+        <img src="Images/Monkeys/Monkey04.png" alt="Monkey" width="50" height="50" class="footerImage">
+        <p>Made By Mayland</p>
+        <img src="Images/Monkeys/Monkey05.png" alt="Monkey" width="50" height="50" class="footerImage">
+    </div>

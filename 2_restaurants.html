@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="wb_assign1">
+    <meta name="keywords" content="Assignment01">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mayland">
+    <title>Monkey Foodies</title>
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="CSS/DesktopCSS.css">
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1023px)" href="CSS/TabletCSS.css">
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="CSS/MobileCSS.css">
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/Toggle.js"></script>
+    <script src="JS/RestSelect.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="Images/Monkeys/Monkey03.png" alt="Monkey" height="48" width="48">
+        <h1>Monkey Foodies</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+    <ul>
+        <li class="nav"><a href="1_index.html">Home Page</a></li>
+        <li class="nav"><a href="2_restaurants.html" class="active">Restaurant Page</a></li>
+        <li class="nav"><a href="3_reccomend.html">Reccomendation Page</a></li>
+        <li class="nav"><a href="4_register.html">Registration Page</a></li>
+        <li class="nav"><a href="5_reservation.html">Reservation Page</a></li>
+    </ul>
+    </div>    
+</nav>
+<main>
+    <article>
+        <h2>Featured Restaurants</h2>
+        <hr>
+<!--Restaurant 1-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/GopalsImage.jpg" alt="Gopals" class="cardImage" >
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        Gopal’s Pure Vegetarian provides an atmosphere of peace and balance. Get away from the business of the city and enjoy a nutritious tasty meal!
+                        </p>
+                        <p class="cardP">
+                        Serving a wide variety of vegetarian and vegan cuisine. The menu has an international influence: India, Europe and Asia. 
+                        Everything is prepared from selected natural, fresh ingredients.
+                        </p>
+                        <p class="cardP">
+                        Gopal’s was created by internationally-renowned vegetarian master-chef Kurma Dasa in 1980. 
+                        They are the oldest vegetarian restaurant in Melbourne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Gopal's Vegetarian Restaurant</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$<span style="font-size: 18px; color:darkgrey">$$$</span></h2></div>
+                </div>
+                <p>
+                Cuisine: Vegetarian and Vegan
+                <br>
+                Reservation: Not Required
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Weekly Special - $11.90</h2>
+                        <p>Your Choice of Salad, Soup, Mains, Dessert, and Drinks</p>
+                        <h2>Economy Special - $8.50</h2>
+                        <p>Rice and your choice of 2 Curries and Salad</p>
+                        <h2>So Fresh - $7.00</h2>
+                        <p>Spinach & Cheese Pie and your choice of Green Salad</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="gop" value="gopals" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 2-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/KajikenImage.jpg" alt="Kajiken" class="cardImage">
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        Kajiken is a renowned Japanese chain known for their exceptional abura soba. At Kajiken, dedicated to perfecting the art of this 
+                        distinctive ramen style, emphasizing their unwavering commitment to flavor and technique.
+                        </p>
+                        <p class="cardP">
+                        With precise seasoning, meticulous cooking 
+                        methods, and the finest ingredients, they create an unparalleled taste experience that defines the Kajiken brand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Kajiken</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$$<span style="color:darkgrey">$$</span></h2></div>
+                </div>
+                <p>
+                Cuisine: Japanese
+                <br>
+                Reservation: Not Required
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Original Aburasoba - $18.80</h2>
+                        <p>Pork chashu, bamboo shoots, green onion, and nori</p>
+                        <h2>Roast Beef Aburasoba - $21.80</h2>
+                        <p>Roast beef, onion sauce, yogurt, fried onion, and egg yolk</p>
+                        <h2>Homura Aburasoba - $19.80</h2>
+                        <p>Minced pork, nori, bamboo shoots, green onion, chives, niboshi (fish powder), and egg yolk</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="kaj" value="kajiken" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 3-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/PalermoImage.png" alt="Palermo" class="cardImage">
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        Palermo excels in Argentinian cooking techniques, experienced at their best when sampling premium meats cooked atop the glowing 
+                        hot coals of Melbourne’s first Asado fire pit, in a marriage with their classic Parrilla (charcoal grill). 
+                        </p>
+                        <p class="cardP">
+                        Palermo’s Italian influence shines through the menu with a combination of classic and inventive Italian dishes
+                        such as house-made fresh pasta.
+                        </p>
+                        <p class="cardP">
+                        Palermo sources only the highest quality, locally raised, pasture-fed Hereford and Angus beef. The majority of, coming from 
+                        O’Connor’s Premium, the very best beef from Gippsland, if not the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Palermo</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$$$$<span style="color:darkgrey"></span></h2></div>
+                </div>
+                <p>
+                Cuisine: Argentinian and Italian
+                <br>
+                Reservation: $50 Per Person
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Polo Borracho - $46.00</h2>
+                        <p>Free range half chicken, Vermouth & orange reduction, chilli</p>
+                        <h2>Cuadril de Cordero - $49.00</h2>
+                        <p>300g Pasture fed lamb rump marinated in chiportle & coriander</p>
+                        <h2>Entraña - $59.00</h2>
+                        <p>250g Black Opal skirt steak MB6-7</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="pal" value="palermo" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 4-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/PatsysImage.png" alt="Patsys" class="cardImage">
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        A beautiful little building who was hiding unloved in plain sight in the CBD and we have worked hard to restore her former charms.
+                        </p>
+                        <p class="cardP">
+                        Patsy’s is a vegetarian wine bar who takes cues from the wine bars of the Mediterranean; 
+                        their food and wine that has grown from that agrarian culture.
+                        </p>
+                        <p class="cardP">
+                        If you love wine and delicious food then Patsy’s is the place for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Patsy's</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$$$<span style="color:darkgrey">$</span></h2></div>
+                </div>
+                <p>
+                Cuisine: Vegetarian
+                <br>
+                Reservation: $25 Per Person
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Malfati - $42.00</h2>
+                        <p>Ricotta cheese and pinenut dumplings with fiolaro broccoli, pangrattato & sage</p>
+                        <h2>Cubanelle Pepper - $38.00</h2>
+                        <p>Greek lemon & leek prasorizo, Perrnod, spinach, toasted almonds</p>
+                        <h2>Spaghetti alla assassina - $39.00</h2>
+                        <p>crisped tomato pasta from Bari with chilli, green olive & pangrattato</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="pat" value="patsys" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 5-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/SecretKitchenImage.jpg" alt="SecretKitchen" class="cardImage">
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        Secret Kitchen brings to the city of Melbourne chinese dining experience the like of which you won’t find anywhere else in the state. 
+                        Combining traditional flavours with innovative techniques, an extensive variety of menu items and an incomparable atmosphere, Secret 
+                        Kitchen offers its guests an inimitable feasting experience. 
+                        </p>
+                        <p class="cardP">
+                        Secret Kitchen are awarded one of the top Yum Cha restaurant on Time Out Melbourne and rated 4 stars out of 5 by The Age Good 
+                        Food Guide. Expect new dim sum dishes every season and proudly 100% handmade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Secret Kitchen</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$$<span style="color:darkgrey">$$</span></h2></div>
+                </div>
+                <p>
+                Cuisine: Chinese
+                <br>
+                Reservation: No Fee
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Yum Cha (S) - $8.50</h2>
+                        <p>Your Choice of Small Steamed Dim Sum, Steamed Rice Roll, and more</p>
+                        <h2>Yum Cha (M) - $10.50</h2>
+                        <p>Your Choice of Small Steamed Dim Sum, Steamed Rice Roll, and more</p>
+                        <h2>Yum Cha (L) - $12.50</h2>
+                        <p>Your Choice of Small Steamed Dim Sum, Steamed Rice Roll, and more</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="sec" value="secretK" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+<!--Restaurant 6-->
+        <section class="restaurants">
+            <div class="restaurantCard">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="Images/Restaurants/VapianoImage.jpeg" alt="Vapiano" class="cardImage">
+                    </div>
+                    <div class="cardBack">
+                        <h2 class="cardH2">About the Restaurant</h1>
+                        <p class="cardP">
+                        Vapiano combines traditional Italian recipes with Aussie spice, using the best Australian produce sourced within 150 kilometres of each 
+                        restaurant.
+                        </p>
+                        <p class="cardP">
+                        Vapiano prides over serving only the best made-to-order pizzas, house-made pasta, hand-tossed salads and delicious dessert in a fun, 
+                        relaxing atmosphere filled with fresh herbs at every table and live olive trees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardInfo">
+                <div class="cardHeader">
+                    <h2 class="restName">Vapiano</h2>
+                    <div class="restPrice"><h2 style="font-size: 18px">$$<span style="color:darkgrey">$$</span></h2></div>
+                </div>
+                <p>
+                Cuisine: Italian
+                <br>
+                Reservation: $5 Per Person
+                </p>
+                <div class="signatures">Signature Dishes
+                <a href="#" class="collapse">&and;</a></div>
+                    <fieldset>
+                        <h2>Carbonara - $29.00</h2>
+                        <p>Your Choice of Salad, Soup, Mains, Dessert, and Drinks</p>
+                        <h2>Beef Ragu - $30.00/h2>
+                        <p>Rice and your choice of 2 Curries and Salad</p>
+                        <h2>Chicken Alfredo - $30.00</h2>
+                        <p>Spinach & Cheese Pie and your choice of Green Salad</p>
+                    </fieldset>
+                <div class="buttonSelectInput">
+                    <a href="5_reservation.html" id="vap" value="vapiano" class="buttonSelect" onclick="sendIt()">Select</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+</body>
+
+<footer>
+    <div class="footer">
+        <img src="Images/Monkeys/Monkey04.png" alt="Monkey" width="50" height="50" class="footerImage">
+        <p>Made By Mayland</p>
+        <img src="Images/Monkeys/Monkey05.png" alt="Monkey" width="50" height="50" class="footerImage">
+    </div>
+</footer>

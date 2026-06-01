@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="wb_assign2">
+    <meta name="keywords" content="Assignment02">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mayland">
+    <title>Monkey Foodies</title>
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="CSS/DesktopCSS.css">
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1023px)" href="CSS/TabletCSS.css">
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="CSS/MobileCSS.css">
+	<script src="JS/RegValidation.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="Images/Monkeys/Monkey03.png" alt="Monkey" height="48" width="48">
+        <h1>Monkey Foodies</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+    <ul>
+        <li class="nav"><a href="1_index.html">Home Page</a></li>
+        <li class="nav"><a href="2_restaurants.html">Restaurant Page</a></li>
+        <li class="nav"><a href="3_reccomend.html">Reccomendation Page</a></li>
+        <li class="nav"><a href="4_register.html" class="active">Registration Page</a></li>
+        <li class="nav"><a href="5_reservation.html">Reservation Page</a></li>
+    </ul> 
+    </div>
+</nav>
+<main>
+<form id="regForm" method="post"
+action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+    <h2>Account Registration</h2>
+    <hr>
+    <fieldset class="form">
+			<legend>Account Information</legend>
+			<div class="textInput">
+				<label for="user">Username</label>
+				<input id="user" type="text" name="user" />
+			</div>
+            <div class="textInput">
+				<label for="email">Email Address</label>
+				<input id="email" type="text" name="email" />
+			</div>
+            <div class="textInput">
+				<label for="phone">Phone Number</label>
+				<input id="phone" type="text" name="phone" />
+			</div>
+			<div class="textInput">
+				<label for="pwd1">Password</label>
+				<input id="pwd1" type="password" name="pwd1" />
+			</div>
+			<div class="textInput">
+				<label for="pwd2">Confirm Password</label>
+				<input id="pwd2" type="password" name="pwd2" />
+			</div>
+		</fieldset>
+        <fieldset class="form">
+			<legend>User Information</legend>
+            <div class="radioInput">
+				<span class="radioLabel">Gender</span>
+				<input id="genm" type="radio" name="gender" value="M" />
+				<label for="genm">Male</label>
+				<input id="genf" type="radio" name="gender" value="F" />
+				<label for="genf">Female</label>
+			</div>
+            <div class="selectInput">
+            <label for="dietary">Dietary Preferences</label>
+                <select name="dietary" id="dietary">
+                    <option value="none">None</option>
+                    <option value="halal">Halal</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+            <div class="textInput">
+				<label for="region">Country/Region</label>
+				<input id="region" type="text" name="region" />
+			</div>
+        </fieldset>
+    <div class="buttonInput">
+        <input type="submit" value="Confirm" />
+    </div>
+</form>
+</main>
+</body>
+
+<footer>
+    <div class="footer">
+        <img src="Images/Monkeys/Monkey04.png" alt="Monkey" width="50" height="50" class="footerImage">
+        <p>Made By Mayland</p>
+        <img src="Images/Monkeys/Monkey05.png" alt="Monkey" width="50" height="50" class="footerImage">
+    </div>
+</footer>
