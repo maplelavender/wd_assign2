@@ -21,3 +21,8 @@ Issues and Limitations:
 
 References:
 https://www.gopalspurevegetarian.com.au/
+https://www.kajiken.com.au/
+https://www.palermo.melbourne/
+https://www.patsys.com.au/
+https://www.secret-kitchen.com.au/
+https://vapiano.com.au/
