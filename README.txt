@@ -1,0 +1,23 @@
+Website Structure:
+- 1_index.html
+- 2_restaurants.html
+- 3_reccomend.html
+- 4_register.html
+- 5_reservation.html
+
+Github Repository Link:
+- 
+
+Javascript Validation Logic:
+- Javascript is used to create looping code that will go through what was entered in the form
+to see if it matches the set rules for each field, like checking to see if a gender was selected
+or if something has an @ symbol when it shouldn't.
+
+
+Issues and Limitations:
+- Search Filter is incomplete, does not actually filter list of restaurants
+- Validation is not working on reservation page
+- selected restaurant from restaurant and reccomendation page are not linked in the reservation page
+
+References:
+https://www.gopalspurevegetarian.com.au/
