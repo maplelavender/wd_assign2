@@ -6,7 +6,7 @@ Website Structure:
 - 5_reservation.html
 
 Github Repository Link:
-- 
+https://maplelavender.github.io/wd_assign2/
 
 Javascript Validation Logic:
 - Javascript is used to create looping code that will go through what was entered in the form
